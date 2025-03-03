@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yanda Venkata Rao</title>
+    <link rel="icon" type="image/png" href="/favicon.png" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media-queries.css" />
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Yanda Venkata Rao</div>
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <img src="./assets/theme_dark.png" alt="switch-to-dark-mode" class="icon color-icon" id="moon"
+                src-light="./assets/theme_dark.png" src-dark="./assets/theme_light.png" />
+            <img src="./assets/theme_dark.png" alt="switch-to-light-mode" class="icon color-icon" id="sun"
+                src-light="./assets/theme_dark.png" src-dark="./assets/theme_light.png" />
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Yanda Venkata Rao</div>
+        <div class="hamburger-menu">
+            <div class="nav-container-mobile">
+                <img src="./assets/theme_dark.png" alt="switch-to-dark-mode" class="icon color-icon" id="moon"
+                    src-light="./assets/theme_dark.png" src-dark="./assets/theme_light.png" />
+                <img src="./assets/theme_dark.png" alt="switch-to-light-mode" class="icon color-icon" id="sun"
+                    src-light="./assets/theme_dark.png" src-dark="./assets/theme_light.png" />
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li>
+                    <a href="#projects" onclick="toggleMenu()">Projects</a>
+                </li>
+                <li>
+                    <a href="#contact" onclick="toggleMenu()">Contact</a>
+                </li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src=" .\assets\venkat profile.png"
+            alt="Venkat's Profile Picture" class="profile-pic" />
+        </div>
+        <div class="section__text">
+            <p class="section__text-p1">Hello I'm</p>
+            <h1 class="title">Yanda Venkata Rao</h1>
+            <p class="section__text-p2">Coder</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2"
+                    onclick="window.open('https://drive.google.com/file/d/1TaTq21DqONtTy0Q_5cg9gSFUsRJ18gdg/view?usp=drivesdk', '_blank')">
+                    Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin_light.png" src-light="./assets/linkedin_light.png"
+                    src-dark="./assets/linkedin_dark.png" alt="linkedIn" class="icon linkedin-icon"
+                    onclick="location.href='https:/www.linkedin.com/in/yanda-venkata-rao-b29b832b3'" />
+                <img src="./assets/github_light.png" src-light="./assets/github_light.png"
+                    src-dark="./assets/github_dark.png" alt="github" class="icon github-icon"
+                    onclick="location.href='https://github.com/venkat-12313'" />
+            </div>
+        </div>
+        <img src="././assets/arrow_light.png" src-light="./assets/arrow_light.png" src-dark="./assets/arrow_dark.png"
+            alt="arrow-icon" class="icon arrow" onclick="location.href='./#about'" />
+    </section>
+
+    <section id="about">
+        <p class="section__text-p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="assets/about-pic.jpg" alt="Teja" class="about-pic" />
+            </div>
+            <div class="about__details-container">
+                <div class="about-containers">
+                    <div class="details-container color-container">
+                        <img src="./assets/certifications_light.png" src-light="./assets/certifications_light.png"
+                            src-dark="./assets/certifications_dark.png" alt="certifications" class="icon about-me" />
+                        <h3>Certifications</h3>
+                        <p class="certification__title">
+                            IT Specialist - HTML and CSS
+                        </p>
+                        <p class="certification__subtitle">
+                            Certiport - A Pearson VUE Business
+                        </p>
+                        <br>
+                        <p class="certification__title">
+                            web development using frontend
+                        </p>
+                        <p class="certification__subtitle">
+                            Thub
+                        </p>
+                    </div>
+                    <div class="details-container color-container">
+                        <img src="./assets/education_light.png" src-light="./assets/education_light.png"
+                            src-dark="./assets/education_dark.png" alt="education" class="icon about-me" />
+                        <h3>Education</h3>
+                        <p class="education__title">
+                            B.Tech. Computer Science
+                        </p>
+                        <p class="education__subtitle">
+                            Aditya College of Engineering and Technology
+                        </p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        Hello! I am Yanda Venkata Rao, a third-year
+                        Computer Science Engineering (CSE) student at Aditya
+                        College of Engineering and Technology. I have good
+                        programming skills with quick learning ability,
+                        leadership qualities and effective communication
+                        skills. I'm committed to finding a position where I
+                        can comfortably use my skills in a reputable
+                        company.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="././assets/arrow_light.png" src-light="./assets/arrow_light.png" src-dark="./assets/arrow_dark.png"
+            alt="arrow-icon" class="icon arrow" onclick="location.href='./#skills'" />
+    </section>
+
+    <section id="skills">
+        <p class="section__text-p1">Explore My</p>
+        <h1 class="title">Skills</h1>
+        <div class="skills-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <h2 class="skills__title">Programming Languages</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                                src-dark="./assets/checkmark_dark.png" alt="checkmark" class="icon" />
+                            <div>
+                    
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                                src-dark="./assets/checkmark_dark.png" alt="checkmark" class="icon" />
+                            <div>
+                                <h3>Java</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                                src-dark="./assets/checkmark_dark.png" alt="checkmark" class="icon" />
+                            <div>
+                                <h3>Python</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <h2 class="skills__title">Web Technologies</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                                src-dark="./assets/checkmark_dark.png" alt="checkmark" class="icon" />
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                                src-dark="./assets/checkmark_dark.png" alt="checkmark" class="icon" />
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                                src-dark="./assets/checkmark_dark.png" alt="checkmark" class="icon" />
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                                src-dark="./assets/checkmark_dark.png" alt="checkmark" class="icon" />
+                            <div>
+                                <h3>SQL</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <h2 class="skills__title">System Skills</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                                src-dark="./assets/checkmark_dark.png" alt="checkmark" class="icon" />
+                            <div>
+                                <h3> Linux</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                                src-dark="./assets/checkmark_dark.png" alt="checkmark" class="icon" />
+                            <div>
+                                <h3>Git</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow_light.png" src-light="./assets/arrow_light.png" src-dark="./assets/arrow_dark.png"
+            alt="arrow-icon" class="icon arrow" onclick="location.href='./#projects'" />
+    </section>
+
+    <section id="projects">
+        <p class="section__text-p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="skills-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-studysync.jpg" alt="project-StudySync" class="project-img" />
+                    </div>
+                    <h2 class="projects__title project-title">StudySync</h2>
+                    <h3 class="projects__subtitle project-subtitle">
+                        A Basic Responsive Frontend Landing Page Using HTML
+                        and CSS
+                    </h3>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/venkat-12313/catch-game'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://catch-game-livid.vercel.app/'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-portfolio.jpg" alt="project-portfolio" class="project-img" />
+                    </div>
+                    <h2 class="projects__title project-title">
+                        My Portfolio
+                    </h2>
+                    <h3 class="projects__subtitle project-subtitle">
+                        A Basic Responsive Portfolio Using HTML, CSS, and
+                        JavaScript
+                    </h3>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/omteja04/omteja04.github.io'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://omteja04.github.io/'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-sushi.jpg" alt="3D boxes" class="project-img" />
+                    </div>
+                    <h2 class="projects__title project-title">
+                        3D Boxes
+                    </h2>
+                    <h3 class="projects__subtitle project-subtitle">
+                     Frontend Using HTML, CSS
+                        
+                    </h3>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/venkat-12313/3d-boxes'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://3d-boxes-lake.vercel.app/'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow_light.png" src-light="./assets/arrow_light.png" src-dark="./assets/arrow_dark.png"
+            alt="arrow-icon" class="icon arrow" onclick="location.href='./#contact'" />
+    </section>
+
+    <section id="contact">
+        <p class="section__text-p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email_light.png" src-light="./assets/email_light.png"
+                    src-dark="./assets/email_dark.png" alt="email" class="icon contact-icon email-icon" />
+                <p>
+                    <a href="mailto:venkyeducation143@gmail.com">venkyeducation143@gmail.com</a>
+                </p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin_light.png" src-light="./assets/linkedin_light.png"
+                    src-dark="./assets/linkedin_dark.png" alt="linkedIn linkedin-icon" class="icon contact-icon" />
+                <p>
+                    <a href="https://www.linkedin.com/in/yanda-venkata-rao-b29b832b3">LinkedIn</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p class="copy">
+            Copyright &copy; 2024 Yanda Venkata Rao. All Rights Reserved
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
